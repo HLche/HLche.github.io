@@ -42,6 +42,12 @@ body {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .topNav .nav-link .baseLine {
+    display: none;
+  }
+}
+
 .topNav .nav-link:hover {
   font-weight: 500;
 }

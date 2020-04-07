@@ -1,12 +1,12 @@
 @import "./variable";
 @import "./general";
 
-
 .indexContentBlock {
 	height: calc(100vh - 80px - #{$padding});
 	align-content: center;
 	padding: 15px;
 	display: flex;
+	flex-wrap: wrap;
     margin: 0;
 	.bgWaterMark{
 		position: absolute;
@@ -15,10 +15,14 @@
 		height: calc(100vh - 80px);
 		width: 100%;
 		background-image: url(../image/CHLWhiteBG.png);
-		background-size: 80%;
+		background-size: 70%;
 		background-repeat: no-repeat;
 		opacity: 0.05;
-		background-position: -30px 50%; 
+		background-position: -30px 50%;
+		@include mobile{
+			background-size: 100%;
+			background-position: 0 30%;
+		}
 	}
 	
 	.imageBlock {
@@ -47,6 +51,7 @@
 				background-color: color(mainWhite);
 				color: color(mainBlack);
 				opacity: 0;
+				margin-bottom: 5px;
 				&:hover {
 					background-color: color(mainBlack);
 					color: color(mainWhite);

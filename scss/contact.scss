@@ -36,9 +36,15 @@
 		}
 		#phoneBlock{
 			opacity: 0;
+			@include mobile{
+				margin-bottom: 15px;
+			}
 		}
 		.formBlock {
 			border-left: 1px solid color(mainWhite);
+			@include mobile{
+				border:none;
+			}
 			#formBlockContent{
 				opacity: 0;
 			}

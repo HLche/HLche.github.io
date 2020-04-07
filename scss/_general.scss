@@ -19,6 +19,9 @@ body {
 			margin-top: 5px;
 			background-color: black;
 			transition: all 0.3s ease;
+			@include mobile{
+				display: none;
+			}
 		}
 		&:hover {
 			font-weight: 500;

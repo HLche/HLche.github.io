@@ -42,6 +42,12 @@ body {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .topNav .nav-link .baseLine {
+    display: none;
+  }
+}
+
 .topNav .nav-link:hover {
   font-weight: 500;
 }
@@ -115,8 +121,20 @@ body {
   opacity: 0;
 }
 
+@media (max-width: 768px) {
+  .contentContainer .contactBlockContainer #phoneBlock {
+    margin-bottom: 15px;
+  }
+}
+
 .contentContainer .contactBlockContainer .formBlock {
   border-left: 1px solid #F5F7F6;
+}
+
+@media (max-width: 768px) {
+  .contentContainer .contactBlockContainer .formBlock {
+    border: none;
+  }
 }
 
 .contentContainer .contactBlockContainer .formBlock #formBlockContent {
