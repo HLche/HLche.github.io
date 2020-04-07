@@ -1,0 +1,59 @@
+@import "./variable";
+@import "./general";
+
+.contentContainer {
+	padding-top: 0 !important;
+	.pageTitle {
+		text-align: center;
+	}
+	padding-top: $padding;
+	.listSection {
+		background-color: color(mainWhite);
+		color: color(mainBlack);
+		margin-bottom: 30px;
+        border-radius: 5px;
+        opacity: 0;
+		.imageSection {
+			padding: 0;
+			.carousel-inner {
+				img {
+					height: 100%;
+				}
+            }
+            .carousel-control-prev-icon{
+                background-color: black;
+                border-radius: 50%;
+            }
+            .carousel-control-next-icon{
+                background-color: black;
+                border-radius: 50%;
+            }
+		}
+		.infoSection {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			.title {
+				font-weight: 700;
+				border-bottom: 3px solid gray;
+				padding-bottom: 10px;
+			}
+			.techText {
+				font-weight: bold;
+			}
+			.techTextContent {
+				font-weight: 100;
+			}
+		}
+	}
+}
+
+@keyframes listSectionFadeIn{
+    0%{
+        transform: translateX(500px);
+        opacity: 0;
+        }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+        }
+}

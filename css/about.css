@@ -1,0 +1,98 @@
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #101820;
+  color: #F5F7F6;
+}
+
+.topNav {
+  background-color: #F5F7F6;
+  color: black;
+}
+
+.topNav .nav-link .baseLine {
+  width: 0%;
+  height: 3px;
+  margin-top: 5px;
+  background-color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.topNav .nav-link:hover {
+  font-weight: 500;
+}
+
+.topNav .nav-link:hover .baseLine {
+  width: 100%;
+}
+
+.topNav .active {
+  font-weight: 500;
+}
+
+.topNav .active .baseLine {
+  width: 100%;
+}
+
+.contentContainer {
+  margin-top: 80px;
+  padding-bottom: 15px;
+  min-height: calc(100vh - 80px - 15px);
+}
+
+.paddingZero {
+  padding: 0 !important;
+}
+
+.contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentContainer .aboutLogo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.contentContainer .aboutLogo img {
+  width: 100%;
+}
+
+.contentContainer p {
+  font-size: 24px;
+}
+/*# sourceMappingURL=about.css.map */

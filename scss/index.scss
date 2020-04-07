@@ -1,0 +1,80 @@
+@import "./variable";
+@import "./general";
+
+
+.indexContentBlock {
+	height: calc(100vh - 80px - #{$padding});
+	align-content: center;
+	padding: 15px;
+	display: flex;
+    margin: 0;
+	.bgWaterMark{
+		position: absolute;
+		top: calc(80px - #{$padding});
+		left: 0;
+		height: calc(100vh - 80px);
+		width: 100%;
+		background-image: url(../image/CHLWhiteBG.png);
+		background-size: 80%;
+		background-repeat: no-repeat;
+		opacity: 0.05;
+		background-position: -30px 50%; 
+	}
+	
+	.imageBlock {
+		display: flex;
+		justify-content: center;
+		opacity: 0;
+		img {
+			width: 80%;
+		}
+	}
+	.nameBlock {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		div{
+			align-self: center;
+			.title {
+				opacity: 0;
+			}
+			.subTitle {
+				opacity: 0;
+				color: lightgrey;
+				margin-bottom: 30px;
+			}
+			.portfolioBtn {
+				background-color: color(mainWhite);
+				color: color(mainBlack);
+				opacity: 0;
+				&:hover {
+					background-color: color(mainBlack);
+					color: color(mainWhite);
+					border: 0.5px solid color(mainWhite);
+				}
+			}
+		}
+	}
+}
+
+@keyframes TextFadeLeft {
+	0% {
+		transform: translateX(200px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes imageFadeUp {
+	0% {
+		transform: translateY(20%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

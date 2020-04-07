@@ -1,0 +1,15 @@
+{
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "./css" //此為輸出的路徑，可以自行更改
+		},
+		{
+			"extensionName": ".min.css", //正式版副檔名為min.css
+			"format": "compressed", //壓縮成一行css，正式版本
+			"savePath": "/dist/style"
+		}
+	],
+	"liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"]
+}

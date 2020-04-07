@@ -1,0 +1,46 @@
+body,
+html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+body {
+	background-color: color(mainBlack);
+	color: color(mainWhite);
+}
+.topNav {
+	background-color: color(mainWhite);
+	color: black;
+	.nav-link{
+		
+		.baseLine {
+			width: 0%;
+			height: 3px;
+			margin-top: 5px;
+			background-color: black;
+			transition: all 0.3s ease;
+		}
+		&:hover {
+			font-weight: 500;
+			.baseLine{
+				width: 100%;
+			}
+		}
+		
+	}
+	.active {
+		font-weight: 500;
+		.baseLine{
+			width: 100%;
+		}
+	}
+}
+.contentContainer {
+    margin-top: 80px;
+    padding-bottom: $padding;
+	min-height: calc(100vh - 80px - #{$padding});
+}
+
+.paddingZero{
+    padding:0 !important;
+}

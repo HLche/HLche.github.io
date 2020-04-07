@@ -1,0 +1,20 @@
+$color: (
+	mainBlack: #101820,
+	mainWhite: #F5F7F6,
+	light-mainWhite: lighten(#F5F7F6, 40%),
+);
+@function color($colorName) {
+	@return map-get($color, $colorName);
+}
+$padding: 15px;
+$borders: 15px;
+$desktop: 768px;
+
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
