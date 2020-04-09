@@ -20,6 +20,12 @@
 		}
 		.imageSection {
 			padding: 0;
+			.spinner-container{
+				display: inline-flex;
+				flex-direction: row;
+				width: 100%;
+				justify-content: center;
+			}
 			.carousel-inner {
 				img {
 					height: 100%;

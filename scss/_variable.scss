@@ -8,7 +8,8 @@ $color: (
 }
 $padding: 15px;
 $borders: 15px;
-$desktop: 768px;
+$desktop-md: 768px;
+$desktop-lg: 1080px;
 
 @keyframes FadeIn {
 	0% {
@@ -18,14 +19,19 @@ $desktop: 768px;
 		opacity: 1;
 	}
 }
-@mixin desktop {
-    @media(min-width: #{$desktop}){
+@mixin desktop-lg {
+    @media(min-width: #{$desktop-lg}){
+        @content;
+    }
+}
+@mixin desktop-md {
+    @media(min-width: #{$desktop-md}){
         @content;
     }
 }
 
 @mixin mobile {
-    @media(max-width: #{$desktop}){
+    @media(max-width: #{$desktop-md}){
         @content;
     }
 }

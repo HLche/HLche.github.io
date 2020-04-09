@@ -103,6 +103,20 @@ body {
   padding: 0;
 }
 
+.contentContainer .listSection .imageSection .spinner-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .contentContainer .listSection .imageSection .carousel-inner img {
   height: 100%;
 }

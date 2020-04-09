@@ -7,8 +7,8 @@
 	padding: 15px;
 	display: flex;
 	flex-wrap: wrap;
-    margin: 0;
-	.bgWaterMark{
+	margin: 0;
+	.bgWaterMark {
 		position: absolute;
 		top: calc(80px - #{$padding});
 		left: 0;
@@ -19,12 +19,21 @@
 		background-repeat: no-repeat;
 		opacity: 0.05;
 		background-position: -30px 50%;
-		@include mobile{
+		@include mobile {
 			background-size: 100%;
 			background-position: 0 30%;
 		}
+
+		@include desktop-md {
+			background-size: 60%;
+			background-position: 10% 50%;
+		}
+		@include desktop-lg {
+			background-size: 55%;
+			background-position: 25% 50%;
+		}
 	}
-	
+
 	.imageBlock {
 		display: flex;
 		justify-content: center;
@@ -37,7 +46,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		div{
+		div {
 			align-self: center;
 			.title {
 				opacity: 0;
